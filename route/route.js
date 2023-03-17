@@ -8,9 +8,9 @@ const auth = require('../middleware/userAuth')
 router.post('/register', user.userRegister);
 router.post('/login', user.login);
 router.post('/logout',user.logout);
-router.post('changePassword',user.changePassword);
-router.post('updatepassword', user.updatePassword);
-router.post('resetPassword',user.resetPassword)
+router.put('changePassword',user.changePassword);
+router.put('updatepassword', user.updatePassword);
+router.put('resetPassword',user.resetPassword)
 
 // Event routes
 
